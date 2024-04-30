@@ -17,8 +17,30 @@ Classification Loss
 Mask Loss
 
 ### Usage
+
+##### Model Training
+Set Up Root Directory:
+
+Establish a root directory (e.g., Object Detection).
+Copy Necessary Files:
+
+Within the root directory, duplicate the 'mrcnn' directory.
+Download Pre-trained Weights:
+
+Retrieve the pre-trained weights and place them in the root directory.
+Access the weights via this [link](https//github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5)
+Create Object Detection Script:
+
+Craft a script dedicated to object detection.
+Save this script within the root directory. An exemplary script can be found at: mask-rcnn-prediction.py.
+Refer to the subsequent section for the script's code.
+Execute the Script:
+
+Run the script to initiate the object detection process.
+##### Use Pretrained Model
 To use the trained model for inference, follow these steps:
 
-Download the trained weights (drone_mask_rcnn.h5) from the releases section of Huggingface https://huggingface.co/bilalmashooq/Drone_Detection_MRCNN 
+Download the trained weights (drone_mask_rcnn.h5) from the releases section of Huggingface [Trained Model](https://huggingface.co/bilalmashooq/Drone_Detection_MRCNN)
+
 Install the required dependencies by running pip install -r requirements.txt.
 Use the provided script (prediction.py) to perform inference on your images. 
